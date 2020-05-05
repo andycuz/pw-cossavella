@@ -21,14 +21,15 @@ public class User implements Serializable {
     private String pwd;
     private LocalDate birth;
 
+    public User() {
+    }
+
+    
     public User(Long id, String usr, String pwd) {
         this.id = id;
         this.usr = usr;
         this.pwd = pwd;
-    }
-
-    
-    
+    }    
     
     public Long getId() {
         return id;

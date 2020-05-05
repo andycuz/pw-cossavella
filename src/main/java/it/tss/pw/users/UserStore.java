@@ -37,8 +37,7 @@ public class UserStore {
     
     public User create (User u){
       users.putIfAbsent(u.getId(), u);
-      
-       return users.putIfAbsent(u.getId(), u);
+      return users.get(u.getId());
      }
     
     public User update (User u){
