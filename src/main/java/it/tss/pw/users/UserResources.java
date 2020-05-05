@@ -7,9 +7,11 @@ package it.tss.pw.users;
 
 import java.util.Collection;
 import javax.inject.Inject;
+import javax.json.JsonObject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
+import javax.ws.rs.PATCH;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -62,6 +64,17 @@ public User update(@PathParam("id")Long id, User u){
 public void delete(@PathParam("id")Long id )
 {store.delete(id);}
 
+@PATCH
+@Path("{id}/firstname")
+@Produces(MediaType.APPLICATION_JSON)
+
+public User updateFirstName(@PathParam("id")Long id, JsonObject json){
+    User found = store.find(id);
+    found.setFirstName(json.getString("firstname"));
+    return store.update(found);
+    
+    
+}
 
 
 
