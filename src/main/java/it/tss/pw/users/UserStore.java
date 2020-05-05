@@ -36,7 +36,8 @@ public class UserStore {
     
     
     public User create (User u){
-        System.out.println("create user" + u.getId());
+      users.putIfAbsent(u.getId(), u);
+      
        return users.putIfAbsent(u.getId(), u);
      }
     
