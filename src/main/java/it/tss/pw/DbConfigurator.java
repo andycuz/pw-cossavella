@@ -42,9 +42,9 @@ public class DbConfigurator {
     public static final String MARIADB_PROTOCOL = "tcp";
     public static final String MARIADB_USR = "root";
     public static final String MARIADB_USER_PWD = "19011989";
-    public static final String MARIADB_DATABASE_NAME = "projectwork";
+    public static final String MARIADB_DATABASE_NAME = "pw_cossavella";
     public static final String MARIADB_CLASS_NAME = "org.mariadb.jdbc.MariaDbDataSource";
-    public static final String DS_JNDI_NAME = "java:global/jdbc/pw-cossavella";
+    public static final String DS_JNDI_NAME = "java:global/jdbc/pw_cossavella";
 
     @Resource(lookup = DS_JNDI_NAME)
     private DataSource pw;
