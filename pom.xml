@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.tss</groupId>
-    <artifactId>projectwork</artifactId>
+    <artifactId>pw_cossavella</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <dependencies>
@@ -39,5 +39,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
+    <name>pw_cossavella</name>
 </project>
 

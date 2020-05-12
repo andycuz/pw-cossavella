@@ -31,7 +31,7 @@ import org.flywaydb.core.Flyway;
         password = DbConfigurator.MARIADB_USER_PWD,
         databaseName = DbConfigurator.MARIADB_DATABASE_NAME
 )
-@Singleton()
+@Singleton
 @Startup
 @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     
