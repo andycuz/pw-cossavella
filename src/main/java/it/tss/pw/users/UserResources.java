@@ -32,7 +32,7 @@ UserStore store;
 @GET
 @Produces(MediaType.APPLICATION_JSON)
 public Collection <User> all (){
-    return store.allUsers();
+    return store.all();
 }
 
 @POST
@@ -77,5 +77,5 @@ public User updateFirstName(@PathParam("id")Long id, JsonObject json){
 }
 
 
-
 }
+
