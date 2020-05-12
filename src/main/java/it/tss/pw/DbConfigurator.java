@@ -40,8 +40,8 @@ public class DbConfigurator {
     public static final String MARIADB_HOST = "localhost";
     public static final int MARIADB_PORT = 3306;
     public static final String MARIADB_PROTOCOL = "tcp";
-    public static final String MARIADB_USR = "root";
-    public static final String MARIADB_USER_PWD = "19011989";
+    public static final String MARIADB_USR = "pwapp";
+    public static final String MARIADB_USER_PWD = "pwapp";
     public static final String MARIADB_DATABASE_NAME = "pw_cossavella";
     public static final String MARIADB_CLASS_NAME = "org.mariadb.jdbc.MariaDbDataSource";
     public static final String DS_JNDI_NAME = "java:global/jdbc/pw_cossavella";
