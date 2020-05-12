@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package it.tss.pw.security;
+
 import it.tss.pw.users.User;
+import it.tss.pw.users.User;
+import it.tss.pw.users.UserStore;
 import it.tss.pw.users.UserStore;
 import java.util.Optional;
 import javax.inject.Inject;
-import javax.security.enterprise.credential.Credential;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.POST;
@@ -19,10 +16,12 @@ import javax.ws.rs.core.Response;
 
 /**
  *
- * @author andre
+ * @author alfonso
  */
+@Path("/authentication")
 public class AuthenticationResource {
-     @Inject
+
+    @Inject
     UserStore store;
 
     @POST
@@ -55,5 +54,3 @@ public class AuthenticationResource {
                 .build();
     }
 }
-    
-

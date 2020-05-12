@@ -19,7 +19,7 @@ import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author andre
+ * @author andrea
  */
 @Stateless
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
