@@ -9,3 +9,4 @@
  */
 
 INSERT INTO `pw_cossavella`.`user` (`fname`, `lname`, `pwd`, `usr`) VALUES ('Andrea', 'Cossavella', 'andre', 'cossa');
+INSERT INTO `pw_cossavella`.`user` (`fname`, `lname`, `pwd`, `usr`) VALUES ('Mongo', 'Db', 'mongo', 'db');
